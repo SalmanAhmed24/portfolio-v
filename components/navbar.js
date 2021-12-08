@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Drawer } from 'react-rainbow-components';
+import Drawer from '@mui/material/Drawer';
 
 function Navbar() {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -17,7 +17,7 @@ function Navbar() {
 				</h1>
 			</div>
 
-			<Drawer isOpen={isOpen} onRequestClose={() => onDrawerHandler()}>
+			<Drawer open={isOpen} onClose={() => onDrawerHandler()}>
 				<div className="linkWrap">
 					<a onClick={() => onDrawerHandler()} href="#home" className="links">
 						Home
