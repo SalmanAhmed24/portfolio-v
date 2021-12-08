@@ -39,13 +39,7 @@ p {
 .sc-jXQZqI {
 	background: transparent !important;
 }
-.MuiPaper-root {
-	width: 25%;
-	overflow: hidden;
-	background: rgba(0, 0, 0, 0.3);
-	backdrop-filter: blur(3px);
-	box-shadow: 0 0 10px #fff;
-}
+
 @media screen and (min-width: 320px) and (max-width: 570px) {
 	body,
 	html {
@@ -78,8 +72,19 @@ p {
 		@content;
 	}
 }
+.MuiPaper-root {
+	width: 25% !important;
+	overflow: hidden !important;
+	background: rgba(0, 0, 0, 0.3) !important;
+	backdrop-filter: blur(3px) !important;
+	box-shadow: 0 0 10px #fff !important;
+	@include for-320-767 {
+		width: 250px !important;
+	}
+}
 .mainWrap {
 	padding: 1.6rem 10rem;
+	overflow: hidden;
 	@include for-320-767 {
 		padding: 1.6rem 4rem;
 	}
@@ -505,6 +510,9 @@ p {
 				transition: 0.3s ease-in-out;
 				z-index: 1;
 				opacity: 0.3;
+				@include for-320-767 {
+					opacity: 0.6;
+				}
 				.blurDiv {
 					display: flex;
 					flex-direction: column;
@@ -517,6 +525,9 @@ p {
 					background: rgba($color: #000, $alpha: 0.3);
 					transition: 0.3s ease-in-out;
 					opacity: 0.3;
+					@include for-320-767 {
+						opacity: 0.5;
+					}
 				}
 				&:hover {
 					cursor: pointer;
@@ -537,6 +548,9 @@ p {
 				transition: 0.3s ease-in-out;
 				z-index: 1;
 				opacity: 0.3;
+				@include for-320-767 {
+					opacity: 0.6;
+				}
 				.blurDiv {
 					display: flex;
 					flex-direction: column;
@@ -549,6 +563,9 @@ p {
 					background: rgba($color: #000, $alpha: 0.3);
 					transition: 0.3s ease-in-out;
 					opacity: 0.3;
+					@include for-320-767 {
+						opacity: 0.5;
+					}
 				}
 				&:hover {
 					cursor: pointer;
