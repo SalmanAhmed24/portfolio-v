@@ -14,7 +14,7 @@ function Contact() {
 				<span>Contact us</span>
 				<h1>Lets talk</h1>
 				<div className="socialWrap">
-					<a rel="noopener" href="https://www.fiverr.com/fullstack_dev24">
+					<a rel="noopener" href="https://www.fiverr.com/salmanahmed111">
 						<img src="/images/fi.png" className="iconsCus" alt="Fiverr" />
 					</a>
 					<a rel="noopener" href="https://www.linkedin.com/in/salman-ahmed-abbasi-86a5bb10b/">
@@ -31,7 +31,7 @@ function Contact() {
 			<div className="emailWrap" data-aos="fade-right">
 				<div className="emailLinks">
 					<a href="tel:923045398797">03045398797</a>
-					<a href="mailto:salman@siliconhillsmarketing">salman@siliconhillsmarketing</a>
+					<a href="mailto:salman.ahmed.abbasi.24@gmail.com">salman.ahmed.abbasi.24@gmail.com</a>
 				</div>
 				<div className="emailPara">
 					<p>Providing creative ideas for your business</p>
